@@ -36,7 +36,7 @@ function Example:on_load()
         return msg
     end)
 
-    --- Call the method immediately
+    --- Call the method immediately (this is just for demonstration, only do this if you need to)
     --- Executes the newly added "say_hello" method with the current player name.
     local response = player:run_method("say_hello", GetPlayerName(player.source))
     log("success", translate("example_method_ran", response))
@@ -68,3 +68,4 @@ register_hook("example", function(player)
     local instance = setmetatable({ player = player }, { __index = Example })
     player:add_extension("example", instance)
 end, 100) --- Loads before other extensions priority 1-100 (good for core or dependency extensions).
+
