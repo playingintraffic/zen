@@ -79,10 +79,6 @@ They can:
 * Inject new methods
 * Store their own isolated data
 
-Extensions don't talk to each other.
-They don't break each other.
-And they don't require some central config file from 2019.
-
 Load one. Load five. Or load nothing. It still works.
 
 ---
