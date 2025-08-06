@@ -56,3 +56,23 @@ if zen.is_server then
         end
     end)
 end
+
+if not zen.is_server then
+    local test_api = exports.zen:api()
+
+    RegisterCommand("zen:checkdata", function(_, args)
+        local category = args[1] or nil
+
+        if category then
+            if test_api.has_player_data(category) then
+                log("success", translate("example_client_data_found", category))
+                print(json.encode(test_api.get_player_data(category)))
+            else
+                log("warn", translate("example_client_data_missing", category))
+            end
+        else
+            log("info", translate("example_client_data_dump"))
+            test_api.dump_player_data()
+        end
+    end)
+end
