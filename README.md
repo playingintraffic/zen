@@ -2,6 +2,10 @@
 
 # ZEN - Zero Extra Nonsense
 
+## Documentation
+
+https://playingintraffic.site/docs/zen
+
 ## Overview
 
 ZEN is a server framework core.
