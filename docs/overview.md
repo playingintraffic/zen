@@ -4,7 +4,7 @@
 
 ## Overview
 
-ZEN is a server framework core.
+ZEN is a server core.
 It's not a roleplay kit, it's not a city template, and it's not a collection of thrown together bloat.
 
 It's a core built around one principle: **Only build what you need.**
@@ -18,7 +18,7 @@ Just a clean, memory-safe core that gives every player their own scoped Lua obje
 You get full control.  
 You write the extensions.  
 You decide what loads.  
-You don't fight the framework.
+You don't fight the core.
 If other cores make you unbuild before you build, ZEN lets you start clean and stay clean.
 
 ---
@@ -27,8 +27,7 @@ If other cores make you unbuild before you build, ZEN lets you start clean and s
 
 Because sometimes you just want to build what you need and nothing else.
 
-Every other framework ships with someone else's idea of what a server should be.  
-Hardcoded jobs. Prebaked inventories. Tightly coupled systems you're expected to work around or rip out.
+Every other core ships with someone else's idea of what a server should be.  
 
 ZEN was built to fix that.
 
@@ -124,9 +123,9 @@ Load one. Load five. Or load nothing. It still works.
 
 Lifecycle hooks that extensions can define:
 
-* `:on_load()`
-* `:on_save()`
-* `:on_unload()`
+* `on_load(self)`
+* `on_save(self)`
+* `on_unload(self)`
 
 All are triggered automatically via lifecycle events.
 
