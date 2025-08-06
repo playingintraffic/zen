@@ -8,7 +8,7 @@
     Thank you for supporting honest development.
 ]]
 
-if IsDuplicityVersion() then
+if zen.is_server then
 
     --- Fired at end of player creation cycle.
     --- Hook externally to react when player is fully loaded.
@@ -40,7 +40,7 @@ if IsDuplicityVersion() then
 
 end
 
-if not IsDuplicityVersion() then
+if not zen.is_server then
 
     --- Fired when player finishes loading on server.
     --- @param meta table: Player metadata sent from server
@@ -52,3 +52,4 @@ if not IsDuplicityVersion() then
     end)
 
 end
+
