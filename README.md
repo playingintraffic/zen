@@ -2,6 +2,20 @@
 
 # ZEN - Zero Extra Nonsense
 
+> **ZEN** is intentionally minimal. If you want a full city out of the box, this isn’t it. If you want a stable foundation to build your own, welcome aboard.
+
+## Dependencies
+
+Zen uses my **GRAFT** sdk's user accounts to handle base functionality you are expected to use this however you could remove it if you wanted.
+
+Refer to the **GRAFT** api to learn about what it can do.
+
+*(most PIT resources are built using GRAFT its a script development kit thats battle tested)*
+
+* **[GRAFT](https://github.com/playingintraffic/graft/)**
+
+---
+
 ## Overview
 
 ZEN is a server core.
