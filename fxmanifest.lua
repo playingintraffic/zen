@@ -27,7 +27,7 @@ fx_version "cerulean"
 games { "gta5" }
 
 name "zen"
-version "0.1.0"
+version "0.2.0"
 description "ZEN - The Zero Extra Nonsense Server Core"
 author "PlayingInTraffic"
 lua54 "yes"
@@ -36,18 +36,19 @@ lua54 "yes"
 shared_scripts {
     "init.lua",
     "core/lib/*.lua",
-    "core/player/registry.lua",
     "core/player/events.lua",
     "core/player/api.lua",
 
     "testing.lua" -- Remove it in production <3
 }
 server_scripts {
+    "core/registry/server.lua",
     "core/player/class.lua"
 }
 
 -- Extensions
 client_scripts {
+    "core/registry/client.lua",
     "extensions/client/*.lua"
 }
 shared_scripts {
